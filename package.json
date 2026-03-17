@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "prepare": "vp config"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.12.0",
+    "better-sqlite3": "^12.8.0",
+    "nuxt": "^4.4.2"
+  },
+  "devDependencies": {
+    "vite-plus": "latest"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild",
+      "@parcel/watcher"
+    ],
+    "overrides": {
+      "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+      "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
+    }
+  }
+}
